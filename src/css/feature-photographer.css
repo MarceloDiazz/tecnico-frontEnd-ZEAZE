@@ -1,0 +1,60 @@
+.feature-photographers-title{
+    color: #363E4E ;
+  }
+  
+  .custom-card-photographers{
+    text-align: center;
+    width: 270px !important;
+    height: auto !important;
+    background: #ffff !important;
+    border-radius: 8px !important;
+  
+  }
+  .custom-card-photographers h5 {
+    color: #363E4E;
+  }
+  .custom-card-photographers li {
+    color: #687285;
+  }
+  
+  .custom-card-photographers button{
+    color: #6C757D;
+    border: solid 1px #6C757D
+  }
+  
+  /* Estilos generales */
+  .photographers-carousel {
+    padding-bottom: 20px;
+    display: flex;
+    overflow-x: none;
+    white-space: nowrap;
+  }
+  
+  .custom-card-photographers {
+    display: inline-block;
+    flex: 0 0 23.5%; /* Muestra 4 elementos en pantallas grandes */
+  }
+  
+  /* Media queries para achicar progresivamente los elementos visibles */
+  @media (max-width: 1000px) {
+    .photographers-carousel {
+      overflow-x: auto;
+    }
+    .custom-card-photographers {
+      flex: 0 0 33.333%; /* Muestra 3 elementos en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .custom-card-photographers {
+      flex: 0 0 50%; /* Muestra 2 elementos en pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .custom-card-photographers {
+      flex: 0 0 80%; /* Muestra 1 elemento en pantallas móviles y un 20% del siguiente */
+    }
+  }
+  
+  
