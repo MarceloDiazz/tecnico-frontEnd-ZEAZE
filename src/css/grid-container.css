@@ -1,0 +1,178 @@
+.custom-grid-container{
+    padding: 8px 8px 16px 8px;
+  }
+  .cart-icon {
+    top: 10px; /* Ajusta la posición del icono */
+    right: 10px;
+    width: 24px; /* Tamaño del icono */
+    cursor: pointer;
+  }
+   
+  .cart-selected{
+    background: #D63415;
+  }
+  .custom-range {
+    flex-grow: 1; /* Hace que el selector de rango ocupe todo el ancho */
+    margin: 0 20px; /* Espacio entre el texto y el rango */
+  }
+  
+  .range {
+    padding: 15px;
+    height: 59px;
+    background: #ffffff;
+    border-radius: 16px;
+  }
+  
+  .range-container {
+    /* direction: rtl; */
+    position: relative;
+    width: 240px;
+  }
+  
+  .range-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #DEE2E6;
+    border-radius: 5px;
+    outline: none;
+    margin: 0;
+  }
+  
+  .range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #D63415;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .range-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #D63415;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .range-marks {
+    position: absolute;
+    top: 2.5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mark {
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff !important;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .range-icons {
+    margin-top: 5px;
+    position: absolute;
+    top: 22px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Galería de imágenes */
+  .gallery-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    gap: 56px; /* Espaciado entre las imágenes */
+    justify-content: center;
+    padding: 16px; /* Añade un padding para evitar que las imágenes queden pegadas a los bordes */
+  }
+  
+  .card-image{
+    border-radius: 10px;
+    background: #fff;
+    padding: 3px;
+  }
+  .custom-image {
+    border-radius: 10px;
+    padding: 2px;
+    width: 264px; /* Ancho fijo para pantallas grandes */
+    height: 264px; /* Asegura que la imagen ocupe todo el contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+  
+  /* Íconos del carrito */
+  .cart-icon {
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid white !important;
+    top: 15px;
+    right: 15px;
+    width: 24px;
+    cursor: pointer;
+  }
+  
+  /* Responsividad */
+  /* Para pantallas más pequeñas */
+  @media (max-width: 1024px) {
+    .custom-image {
+      width: 100%; /* Ajuste dinámico para pantallas más pequeñas */
+      max-width: 264px; /* El tamaño máximo sigue siendo 264px */
+      max-height: 264px; /* El tamaño máximo sigue siendo 264px */
+    }
+    .gallery-grid{
+      gap: 12px;
+    }
+  }
+  
+  /* Para pantallas muy pequeñas, cuando tenemos una sola columna */
+  @media (max-width: 600px) {
+    .gallery-grid {
+      grid-template-columns: 1fr; /* Una sola columna */
+    }
+  
+    .custom-image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .range {
+      padding: 10px;
+      height: 50px;
+    }
+  
+    .range-slider {
+      height: 8px;
+    }
+  
+    .range-container {
+      width: 180px;
+    }
+  
+    .range-icons img {
+      height: 9px;
+      width: 14px;
+      object-fit: contain;
+    }
+  
+    .range-marks {
+      top: 3px;
+    }
+  
+    .mark {
+      width: 12px;
+      height: 12px;
+    }
+  }
