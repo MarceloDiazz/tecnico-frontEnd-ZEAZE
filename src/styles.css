@@ -1,37 +1,7 @@
 body {
-  font-family: "Roboto", sans-serif !important;
-}
-
-/* NAVBAR */
-.bg-logo {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.14)), #D63415;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-}
-
-.w-fit-content {
-  width: fit-content;
-}
-
-nav li {
-  color: #8b92a2;
-  padding: 8px 16px 8px 16px;
-  border: 0px 0px 1px 0px;
-  opacity: 0px;
-  width: Hug (71px) px;
-  height: Fill (40px) px;
-  transition: transform 0.4s ease-in-out;
-}
-.custom-hover a:hover{
-  color: #EC3F1E;
-  transform: scale(1.05);
-}
-
-
-.wrapper-color{
-    color: #B0321A;
-    background-color: #EFAEA1;
+  margin: 0 auto !important; /* Centra el body en la página */
+  font-family: "Roboto", sans-serif !important; /* Fuentes */
+  background: #f8f9fa !important; /* Color de fondo */
+  max-width: 1270px !important;
 }
 
