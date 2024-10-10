@@ -1,0 +1,87 @@
+/* navbar se adapte al ancho del body (1270px) */
+
+.navbar-content {
+  padding: 0 10px 0 10px;
+  max-width: 1270px; /* Se ajusta al ancho del body */
+  margin: 0 auto;
+}
+
+.bg-logo {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.14)),
+    #d63415;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.custom-padding-brand {
+  padding: 16px;
+}
+
+.custom-cart-navbar {
+  filter: sepia(40%) brightness(90%) saturate(70%) hue-rotate(180deg)
+    contrast(25%);
+}
+
+/* notificacion cuando el usuario añada al carrito un elemento */
+.cart-navbar-notification {
+  text-align: center;
+  position: absolute;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 90%;
+  font-size: 10px;
+  color: #fff;
+  background: #d63415;
+}
+.custom-hover a:hover {
+  color: #ec3f1e;
+  transform: scale(1.05);
+}
+
+.wrapper-color {
+  color: #b0321a;
+  background-color: #efaea1;
+}
+
+/* Fixed Navbar para todas las resoluciones */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Comportamiento en dispositivos móviles */
+@media (max-width: 992px) {
+  .navbar-content {
+    padding: 0 10px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .collapse .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-toggler,
+  .custom-cart-navbar {
+    display: inline-block;
+  }
+
+  .d-lg-block {
+    display: none !important;
+  }
+}
+
+/* Transiciones para una mejor experiencia */
+.collapse.show {
+  transition: all 0.4s ease-in-out;
+}
